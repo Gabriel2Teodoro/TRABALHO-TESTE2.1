@@ -1,0 +1,102 @@
+/* Estilos básicos para desktop e telas grandes */
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Ajustar para telas grandes */
+}
+
+h1 {
+    color: #333;
+}
+
+#quiz p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#next {
+    display: none;
+    background-color: #28a745;
+}
+
+.home-button {
+    text-align: center;
+    text-decoration: none;
+    color: #28a745;
+}
+
+/* Estilos para tablets (entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%; /* Ajustar a largura para tablets */
+        padding: 15px; /* Ajustar o padding para tablets */
+    }
+
+    #quiz p {
+        font-size: 16px; /* Reduzir o tamanho da fonte */
+    }
+
+    button {
+        font-size: 14px; /* Ajustar o tamanho da fonte do botão */
+        padding: 8px 16px; /* Ajustar o padding do botão */
+    }
+
+    #result {
+        font-size: 16px; /* Ajustar o tamanho da fonte do resultado */
+    }
+}
+
+/* Estilos para celulares (até 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Ajustar a largura para celulares */
+        padding: 10px; /* Ajustar o padding para celulares */
+    }
+
+    #quiz p {
+        font-size: 14px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    button {
+        font-size: 12px; /* Reduzir o tamanho da fonte do botão */
+        padding: 6px 12px; /* Ajustar o padding do botão */
+    }
+
+    #result {
+        font-size: 14px; /* Ajustar o tamanho da fonte do resultado */
+    }
+}
+
